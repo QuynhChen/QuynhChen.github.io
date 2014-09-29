@@ -1,13 +1,15 @@
-Shereef's Fireside Chat
+SHEREEF'S FIRESIDE CHAT
 
-  Thoughts on Shereef's aim for The DBC Experience.
+  Thoughts on Shereef's ideology behind The DBC Experience.
+
 9/28/14
 
-Shereef, the founder of DBC, describes his aim for The DBC Experience when he first created and as he continually modify DBC.
+Shereef, the founder of DBC, describes his aim for The DBC Experience when he first created and as he continually modifies DBC.
 
 
 THE DBC EXPERIENCE
-My interpretation of the DBC experience is that it exists to garner creativity.
+
+My interpretation of the DBC experience is that DBC exists to garner creativity.
 
 Shereef describes the consumer mindset as a hindrance to creativity and limits learning. Consumer mindset is the idea that we sit back and judge a product, therefore we do not feel the urge to interact and make grand changes beyond criticizing from the outside looking in.
 
@@ -23,7 +25,7 @@ There's a DBC thing that sparks a bit of passion in me. I dislike DBC's integrit
 
 The way I see it: I may be late. I may be slow, but I have not. not. not. fallen out of integrity with DBC. According to Shereef's ideology: To stop trying is to fall out of integrity; To not pick up that knife and cook is falling out of integrity; To not love what I do but settling anyway is falling out of integrity.
 
-DBC may not say it but Shereef's video says it. You don't have to be the brightest or most experienced.You just gotta keep trying to contribute and effect change.
+DBC may not say it but Shereef's video says it. You don't have to be the brightest or most experienced. Just keep trying to contribute and effect change.
 
 
 HOW WOULD I ENGAGE?
