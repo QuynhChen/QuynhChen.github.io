@@ -56,5 +56,9 @@ a:hover {
   margin:auto;
   padding-top:10px;
   bottom: -90%;
-  position: absolute;
+  /*position: absolute;*/
+}
+
+img {
+  box-align: center;
 }
