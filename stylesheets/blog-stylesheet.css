@@ -1,0 +1,60 @@
+html {
+  color:#000066;
+  background-color: #FFFFCC;
+}
+a:link {
+  color:#800800;
+}
+a:visited {
+  color:#ff0000;
+}
+a:hover {
+  color:#FF6699;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+#title {
+  font-size: 2em;
+  font-weight:bold;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  margin:auto;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+#intro /*one liner describing self*/ {
+  font-size: 1.5em;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  margin:auto;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+#blog {
+  font-size: 1em;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  margin:auto;
+  border-bottom: 1px solid black;
+  padding: 30px;
+}
+
+#footer {
+  font-size: 1em;
+  text-align:center;
+  width: 90%;
+  height: 100%;
+  margin:auto;
+  padding-top:10px;
+  bottom: -90%;
+  position: absolute;
+}
