@@ -63,3 +63,15 @@ h3 {
   clear: both;
   position: absolute;
 }
+
+#blog_list {
+  font-size: 1em;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  margin:20px;
+  padding-top:10px;
+  float: left;
+  color:blue;
+  border: 2px solid black;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </head>
+
+  <body id="container">
+    <div id="title">
+    Ruby Enumerable: map
+    </div>
+
+    <div id="intro">
+What does "map" do in ruby? 10/24/14
+    </div>
+
+<div id="blog_list">
+  <ul style="list-style-type:none">
+    <li>
+      <a href="#">blog</a> &nbsp<li>
+      <a href="#"> blog1</a> &nbsp<li>
+      <a href="#">blog2</a> &nbsp<li>
+      <a href="#">blog3</a> &nbsp<li>
+      <a href="#">blog4</a> &nbsp<li>
+      <a href="#">blog5</a><li>
+    </li>
+  </ul>
+</div>
+
+    <div id="blog">
+    Dear Fellow Beginners,
+
+<h3> Ruby Enumerables: what is an Enumerable? </h3>
+
+<p>In Ruby, an enumerable is known as a module. For all practical purposes, an enumerable can be thought of as a class of methods that have been pre-defined and built into ruby, that iterates throughout an array.</p>
+
+<p> The class must provide a method #each, where the methods results in yielding successive members of the collection. If Enumerable#max, #min, or #sort is used, the objects in the collection must also implement a meaningful <=> operator, as these methods rely on an ordering between members of the collection.</p>
+
+<p> To see all the methods built in the enumerable module for Ruby in the command line, type in the terminal the following command: Enumerable.instance_methods.sort
+
+
+<h3>Enumberable #map</h3>
+
+<p> One of the methods included in Enumerables is called map. The map method creates a new array by modifying an existing array. The instructions on how to modify the the array is written in the block.The syntax looks like: original_array.map {block}
+</p>
+
+<p>For example: array = [1, 2, 3, 4].
+  Calling the map method on this array would look like: array.map {|a|2*a}. Here, the instructions inside the block is saying: "multiply each object in the array by 2" The results would be [2, 4, 6, 8]
+
+</p>
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+      <ul style="list-style-type:none">
+        <li>
+          <a href="#">twitter</a> &nbsp
+          <a href="#"> github</a> &nbsp
+          <a href="#">linkedin</a> &nbsp
+          <a href="#">Email me</a> &nbsp
+          <a href="#">social media</a> &nbsp
+          <a href="#">facebook</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+  </body
+</html>
