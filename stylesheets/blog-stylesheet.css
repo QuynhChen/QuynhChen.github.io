@@ -53,6 +53,18 @@ h3 {
   color:black;
 }
 
+#blog_list {
+  font-size: 1em;
+  text-align: center;
+  width: 15%;
+  height: 100%;
+  margin:20px;
+  padding-top:10px;
+  float: left;
+  color:blue;
+  border: 2px solid black;
+}
+
 #footer {
   font-size: 1em;
   text-align:center;
@@ -61,17 +73,6 @@ h3 {
   margin:auto;
   padding-top:10px;
   clear: both;
-  position: absolute;
+  /*position: absolute;*/
 }
 
-#blog_list {
-  font-size: 1em;
-  text-align: center;
-  width: 10%;
-  height: 100%;
-  margin:20px;
-  padding-top:10px;
-  float: left;
-  color:blue;
-  border: 2px solid black;
-}
