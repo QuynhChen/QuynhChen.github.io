@@ -14,55 +14,63 @@ How to use a class in Ruby 10/30/14
     </div>
 
 
-
     <div id="blog">
     Dear Fellow Beginners,
 
-<h3> Let's make a Ruby Class and see how it works</h3>
+<h3>What is a "Class" in Ruby?</h3>
 
-<h4> What is Class in Ruby? <h4>
-
-<p>Classes are objects that are used to organize other objects and classes. Everything in Ruby is either an object or a construct that evaluates to an object. Every object is an instance of some class. Integers are instances of a class, and classes themselves are objects.
-
+<p>First of all, everything in Ruby is either an object or will yield an object. Classes are objects to be used to organize other objects and classes. These other objects are then <em>instances</em> of the class.
 </p>
 
-  <h4> Let's create a class of food that will apply to all other types of food <h4>
+<p> Analogy time: There's a class of wizards. When we created this class, we can define a method to tell us that "It's a wizard!" that applies to all wizards. Then we create an instance of such wizard and call it Hermione, therefore, Hermione is an instance of a wizard. We can put <em> more </em> methods when we create her but because she called her a wizard, we'll get alert that "It's a wizard!" We could also create Harry Potter and add him as an instance of a wizard. He'll also get an alert. Let's do it!
+
+<h3> Example: Let's create the Wizard Class </h3>
+
+<p>To Create the Class:
+<p> <strong>class WizardHere
+  &nbsp def initialize<br>
+    &nbsp&nbsp@alert = alert<br>
+  <br></strong> </p> Be sure to capitalize the first letter of the name. Then, "Camel" it by capitalizing the first letter of each word after it, rather than using underscore. </p>
+
+<p>Define Instance Method of this Class:
+  <strong><p> def alert <br>
+    &nbsp "It's a Wizard!"<br>
+    end
+
+  </p></strong>
+  No caps and use underscore please. Once you define the method inside the class, all instances of the class will share this method. Don't forget to put an "end" to close off the class! </p>
+
+<p>Create and call Hermione and Harry as an instance of a Wizard!</p>
+
+<strong><p> hermione = Wizard.new </p>
+</p></strong>
+<strong><p> harry = Wizard.new </p>
+</p></strong>
+
+<p> the full code looks like this:
+  <strong><p>
+
+class Wizard <br>
+  &nbsp def initialize<br>
+    &nbsp&nbsp@alert = alert<br>
+  end<br>
+
+  &nbspdef alert<br>
+    &nbsp&nbspp "There's a Wizard here!"<br>
+  &nbsp end<br>
+end
+</p></strong>
 
 
+<p> Call it!</p>
+<strong><p>
+  hermione = Wizard.new <br>
+  harry = Wizard.new</p> </strong>
 
+<p> Results: </p>
 
-<p> Class Food (The name of the class (aka constants) is Food and must be capitalized!)
-  @edible = "chew and swallow"
-  def yummy (instance method: method defined in class and intended for use by all instances of this class. so any instance of this class can call them.)
-    "Get in my Belly!"
-</p>
-
-<p> candy = Food.new (this would be an instance of the class "Food")
-  p candy.yummy
-
-</p>
-
-<p> Class object
-</p>
-
-<h3> Instance variables</h3>
-
-<p>
-</p>
-
-<p>
-</p>
-
-<h3> Instance methods </h3>
-
-<p>
-</p>
-
-<p>
-</p>
-
-<p>
-</p>
+<strong><p>There's a Wizard here!<br>
+There's a Wizard here!</strong><p>
 
 
 
