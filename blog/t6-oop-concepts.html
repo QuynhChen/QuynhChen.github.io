@@ -18,7 +18,7 @@ Inheritance vs Composition 10/24/14
 
 <h3> What is Ruby inheritance?</h3>
 
-<p>Ruby inheritance is a relationship between two classes. One is the parent, the other is the child. The child class “inherits” any methods and constants from the parent class. The result is that the child class acquire the methods defined in the superclass.
+<p>Ruby inheritance is a relationship between two classes. One is the parent, the other is the child. The child class inherits any methods and constants from the parent class. The result is that the child class acquire the methods defined in the parent class.
 </p>
 
 <p>
@@ -31,19 +31,20 @@ class Bears < Mammals<br>
 end
 </p>
 
-<p> Here, the class Bears would have it's own method called "claws" built into the class Bears. In addition, it would inherent all the class Mammals attributes. Here the attribute in Mammals is a method named "hair." So class Bear also has the method "hair." The reverse is not true: class Mammals cannot access the method "claws".
+<p> Here, the class Bears would have it's own method called "claws" built into the class Bears. In addition, it would inherit all the class Mammals attributes. Here the attribute in Mammals is a method named "hair." So class Bear also has the method "hair." The reverse is not true: class Mammals cannot access the method "claws".
 
 <h3>What is composition? </h3>
 
-<p>Traditional composition involves moving those features that we want to share into a class in their own right.
+<p>Traditional composition involves moving the features that we want to inside a class directly inside the class! Get functionality by having one object reference another object. With composition, there's more flexibility to an instance inside another by having reference a new instance of another class. You do simply creating the object in another class like this:<br>
+<br>
+class Class<br>
+  &nbsp; object = Class2.new<br>
+  end
 </p>
 
-<p>
 
-</p>
-
-<h3> Which have you used this week? Create your own examples to explain how to use each.</h3>
-
+<h3> Which have you used this week? </h3>
+<p> This week, I've used both composition and inheritance.</p>
 
 
 
