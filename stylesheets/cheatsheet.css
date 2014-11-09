@@ -1,0 +1,42 @@
+body {
+  color: black;
+  background-color: #CCE6FF;
+}
+
+.MainContainer {
+  width: 95%;
+  height: 95%;
+  max-width: 1080px;
+  margin: auto;
+  border-bottom: 1px solid black;
+}
+
+.Header {
+  font-size: 2em;
+  font-weight:bold;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  margin:auto;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+img {
+width: 50%;
+height: 100%;
+}
+
+.LeftColumn {
+  width: 400px;
+  float: left;
+}
+
+.CenterColumn {
+  width: 400px;
+  float: left;
+}
+.RightColumn {
+  width: 100px;
+  float: right;
+}

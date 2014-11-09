@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Positioning: Cheatsheet</title>
+	<link rel="stylesheet" type="text/css" href="../Stylesheets/cheatsheet.css"/>
+	</head>
+
+	<body>
+	<div class="MainContainer">
+		<div class="Header">
+			<h4>CSS Positioning</h4>
+			</div>
+		<div class="LeftColumn">
+
+			<strong><h2>Selectors</h2></strong>
+
+		<p>div -					all DIV tags</p>
+		<p>div, span -			all DIV tags and all SPAN tags</p>
+		<p>div span	-			all SPAN tags inside DIVs</p>
+		<p>#content	-			element with ID “content”</p>
+		<p>.box	-				all elements with CLASS “box”</p>
+		<p>ul#box -				UL tag with ID “box”</p>
+		<p>span.box -			all SPAN tags with CLASS “box”</p>
+		<p>* -					all elements</p>
+		<p>#box * -				all elements inside #box</p>
+		<p>a:link, a:active,	links in normal state, in clicked state,</p>
+		<p>a:visited			and in visited state</p>
+		<p>a:hover -			link with mouse over it</p>
+		<p>div > span -			all SPANs one-level deep in a DIV</p>
+
+			<strong><h2>Positioning</h2></strong>
+
+		<p>position            	places elements on screen, e.g.
+								absolute, fixed, relative</p>
+		<p>float				stacks elements horizontally in a
+								particular direction, e.g. left</p>
+		<p>top, left, right, 	specifies the offsets used in absolute,
+		<p>bottom				fixed, and relative positions, e.g.
+								top:10px;left:10px</p>
+		<p>display				sets how the element is placed in the
+								doc flow, e.g. block, inline, none</p>
+		<p>z-index				sets the stacking order of elements,
+								e.g. z-index of 1 is below z-index of 2</p>
+		<p>	overflow			sets what happens to content outside
+								of container, e.g. auto, hidden</p>
+
+		</div>
+
+		<div class="CenterColumn">
+			<strong><h2>Box Model </h2></strong>
+
+			<img src="images/box_model.png"</>
+
+			<strong><h2>Text</h2></strong>
+
+		<p>font-family            	font used, e.g. Helvetica, Arial</p>
+		<p>font-size				text size, e.g. 60px, 3em</p>
+		<p>color 	text color, e.g. #000, #abcdef</p>
+		<p>font-weight				how bold the text is, e.g. bold</p>
+		<p>font-style				what style the text is, e.g. italic</p>
+		<p>	text-decoration			sets a variety of effects on text, e.g.
+		underline, overline, none</p>
+		<p>text-align            	how text is aligned, e.g. center</p>
+		<p>line-height				spacing between lines, e.g. 2em</p>
+		<p>letter-spacing 	spacing between letters, e.g. 5px</p>
+		<p>text-indent				indent of the first line, e.g. 2em</p>
+		<p>text-transform				applies formatting to text, e.g.uppercase, lowercase, captialize</p>
+		<p>	vertical-align			align relative to baseline, e.g. text-top</p>
+
+		</div>
+
+		<div class="RightColumn">
+			<strong><h2>Borders and Lists</h2></strong>
+
+				<p> borders       	sets border style for all borders, in
+									the format: border: (solid, dashed,
+									dotted, double) (width) (color), e.g.
+									border: solid 1px #000</p>
+				<p> border-top, 	sets border style for a specific
+					-bottom, 		border (same property syntax used
+					-left, 			for padding and margin, e.g.
+					-right     		margin-left)</p>
+
+				<p>list-style-type     sets style of bullets, e.g. square</p>
+				<p>list-style-position     sets how text wraps when bulleted,</p>
+				e.g. outside, inside </p>
+				<p> list-style-image       sets an image for a bullet, e.g.
+				list-style-image:url(bullet.png)</p>
+
+			<strong><h2>Everything Else</h2></strong>
+
+		<p>background            	sets background of an element, in the
+									format: background: (color) (image)
+									(repeat) (position), e.g. background:
+									#000 url(bg.png) repeat-x top left</p>
+		<p>cursor					sets shape of cursor, e.g. pointer</p>
+		<p>outline 					a border drawn around an element
+									that doesn’t affect the box model</p>
+		<p>border-collapse			sets how borders within tables
+									behave, e.g. collapse</p>
+		<p>clear					sets on what side a new line starts in
+									relation to nearby floated elements,
+									e.g. left, right, both</p>
+
+		</div>
+		<div class="Footer">
+			<h4>our contact</h4>
+			</div>
+		</body>
+		</html>
