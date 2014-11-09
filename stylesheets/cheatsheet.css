@@ -32,11 +32,12 @@ height: 100%;
   float: left;
 }
 
+.RightColumn {
+  width: 300px;
+  float: right;
+}
+
 .CenterColumn {
   width: 400px;
   float: left;
-}
-.RightColumn {
-  width: 400px;
-  float: right;
 }
