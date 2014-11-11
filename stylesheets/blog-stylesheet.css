@@ -24,18 +24,18 @@ a:hover {
   height: 100%;
   text-align: center;
   margin:auto;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   padding: 10px;
 }
 
 #intro /*one liner describing self*/ {
   font-size: 1.5em;
-  width: 80%;
+  width: 60%;
   height: 100%;
   text-align: center;
   margin:auto;
   border-bottom: 1px solid black;
-  padding: 5px;
+  padding: 8px;
 }
 
 #blog {
