@@ -1,6 +1,6 @@
 body {
   color:#000066;
-  background-color: #FFFFCC;
+  background-color: #FFFFD1;
   background-image: url("SF_From_Marin_Highlands.jpg");
 }
 a:link {
@@ -33,7 +33,8 @@ a:hover {
   margin:auto;
   border: 2px solid black;
   padding-top: 20px;
-  padding-bottom: 20px
+  padding-bottom: 20px;
+  background-color: white;
 }
 
 #intro /*one liner describing self*/ {
@@ -43,7 +44,8 @@ a:hover {
   text-align: center;
   margin:auto;
   border: 1px solid black;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: gray;
 }
 
@@ -67,6 +69,10 @@ h3 {
 
 #mypix {
   border: 5px solid black;
+  height:25%;
+  width:75%;
+  text-align: center;
+  /*margin: 10px;*/
 }
 
 #cultural_blogs {
@@ -78,8 +84,8 @@ h3 {
   padding-top:20px;
   float: left;
 
-  border: 5px solid black;
-  background-color: white
+  border: 4px solid black;
+  background-color: #FFFFFC;
 }
 
 #techie_blogs {
@@ -91,8 +97,8 @@ h3 {
   padding-top:20px;
   float: right;
   color:black;
-  border: 5px solid black;
-  background-color: white
+  border: 4px solid black;
+  background-color: #FFFFFb;
 }
 
 .blog_header {
