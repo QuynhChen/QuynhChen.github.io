@@ -69,7 +69,7 @@ h3 {
 
 #mypix {
   border: 5px solid black;
-  height:27%;
+  height:160px;
   width:83%;
   text-align: center;
   /*margin: 10px;*/
@@ -79,7 +79,7 @@ h3 {
 #cultural_blogs {
   font-size: 1em;
   text-align: center;
-  width: 130px;
+  width: 150px;
   height: 100%;
   padding: 5px;
   padding-top: 15px;
