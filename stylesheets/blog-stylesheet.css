@@ -86,7 +86,7 @@ h3 {
   float: left;
 
   border: 4px solid black;
-  background-color: #d6ffff;
+  background-color: #cccce0;
 }
 
 #techie_blogs {
@@ -99,7 +99,7 @@ h3 {
   float: right;
   color:black;
   border: 4px solid black;
-  background-color: #d6ffff;
+  background-color: #cccce0;
 }
 
 .blog_header {
