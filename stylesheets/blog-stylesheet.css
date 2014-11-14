@@ -35,6 +35,10 @@ a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: white;
+
+  border-style: groove;
+  border-color: #cccce0;
+  border-width: 5px
 }
 
 #intro /*one liner describing self*/ {
@@ -43,7 +47,11 @@ a:hover {
   height: 40%;
   text-align: center;
   margin:auto;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  border-style: groove;
+  border-color: #cccce0;
+  border-width: 1px;
+
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: gray;
@@ -85,7 +93,9 @@ h3 {
   padding-top: 15px;
   float: left;
 
-  border: 4px solid black;
+  /*border: 4px solid black;*/
+  border-style: groove;
+  border-color: gray;
   background-color: #cccce0;
 }
 
@@ -98,7 +108,9 @@ h3 {
   padding-top: 15px;
   float: right;
   color:black;
-  border: 4px solid black;
+  /*border: 4px solid black;*/
+  border-style: groove;
+  border-color: gray;
   background-color: #cccce0;
 }
 
