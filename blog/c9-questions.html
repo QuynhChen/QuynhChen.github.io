@@ -6,7 +6,7 @@
 
   <body id="container">
     <div id="title">
-    What makes a good question
+    What makes a good question &
     </div>
 
     <div id="intro">
@@ -25,6 +25,30 @@ Good questions are specific without being drowned in too much detail 11/16/14
 
 <p> Tell the person where you're at before you ask a question. "I'm looking at js, in DOM, I'm trying to create a function that does this but I get an error that says this!"
 </p>
+
+<h3>MY SOLUTION to "nums-to-words" Challenge</h3>
+<h4> It felt <em> So Good </em> to play with this challenge this week that I'm showing off the answer in this blog too! (I'm sure it could be better but it tickles my soul as it is for right now.) </h4>
+
+<p> THE "nums-to-words" CHALLENGE: create a method that converts a number into the spelled out word so that in_word(10) would give "ten."
+
+<p>def in_words(num)
+  <br> &nbsp; ones = %w(zero one two three four five six seven eight nine)
+  <br> &nbsp; teens = %w(zero ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen)
+  <br> &nbsp; tens = %w(zero ten twenty thirty forty fifty sixty seventy eighty ninety ) <br>
+  <br> &nbsp; if num.to_s.length == 1
+    <br> &nbsp; &nbsp; p ones.values_at(num).join
+  <br> &nbsp; elsif num.to_s.length == 2 && num < 20
+    <br> &nbsp; &nbsp; p teens.values_at(num.to_s.chars.map{|x| x.to_i}.first).join
+  <br> &nbsp; elsif num.to_s.chars.last == "0"
+    <br> &nbsp; &nbsp; p tens.values_at(num.to_s.chars.map{|x| x.to_i}.first).join
+  <br> &nbsp; else
+   <br> &nbsp; &nbsp; p (tens.values_at(num.to_s.chars.map{|x| x.to_i}.first) + ones.values_at(num.to_s.chars.map{|x| x.to_i}.last)).join(" ")
+   <br>
+ <br> &nbsp; end <br>
+end
+
+<h5> I wonder how much time it would take to build this past 100? (Meanwhile, I'm so proud of 99. ^_^) </h5>
+
 
 
 
