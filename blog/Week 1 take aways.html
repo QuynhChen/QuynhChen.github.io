@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </head>
+
+  <body id="container">
+    <div id="title">
+    Week 1 DBC Take Aways
+    </div>
+
+    <div id="intro">
+No tears yet but I injured my left eye. 11/19/14
+    </div>
+
+    <div id="blog">
+    Dear Fellow Beginners,
+
+<h3> Summary of the Week - My feelings. </h3>
+
+<p> I injured my left eye by the end of Thursday. Tore the surface epithelial slightly (probably due to super dry eye + minor scratch). Neglect led to irritation that led to infection. To my friends' utter disappointment, I did not need to wear an eye patch. Antibiotics drop and saline solution healed me up in 3 days. "Arrrgh mateys!"
+
+
+<h3>Takeaway 1: NESTED Hashes</h3>
+<p>1. Create:
+  <ul> cohort_hash = {  raccoon:{quynh: {age:21}, Aarthi:{age:22} }, dog: {cutie:{height: shortie}, pie: {height: tall} }  }  </ul> </p>
+<p>2. Access via key! <ol> <li>cohort_hash[:key][:key][:key]
+  <li>cohort_hash.fetch(:raccoon).fetch(:quynh) #=> {age:21} or {:age => 21}</li>
+  <li> cohort.fetch:quynh #same as cohort.fetch(:quynh) </li></ol>
+  <ul> BONUS: Find key that doesn't exist
+    <ol><li> cohort_hash[:feet] #=> nil<li>
+    cohort_hash.fetch(:feet){"no feet here"} <br> #same as cohort_hash.fetch(:feet, "no feet here")  <br> #=>results "no feet here" instead of nil. Can add this to hash.
+
+    </li></ol> </p>
+  </ul>
+
+<h3>Takeaway 2: NESTED Array</h3>
+
+<p>1. Create:
+  <ul>Array = [[:a, :b, :c], [;d, ;e, ;f], [:g, :h, :i]] </ul> </p>
+<p>2. Access via index (an integer)! <ol> <li>Array.at(1).at(2)
+  <li>Array[1][2] </li> </ol> </p>
+
+<p>3. Nested Array Problem: </p>
+<ul><strong>  Input: </strong> </ul> <ul> given_array = [[:a, :b, :c], [:d, :e, :f], [:g, :h, :i], [:j, :k, :l], [:m, :n, :o], [:p, :q, :r], [:s, :t, :u], [:v, :w, :x]] </ul>
+  <ul> <strong> Output: </strong> </ul>
+  <ul>
+  destination_array = an array with 3 nested arrays, each nested array contains 3 elements, each of these elements was a random selection from each nested array of the given array.</ul>
+
+  <ul> <strong>  Solution #1: Build the Goal </strong></ul>
+  <ul> Pseudocode: <ol> <li> Create the goal array of an array with 3 nested arrays. <li> Fill in each row and column with iteration. <li> Isolate the sample to fill in. </ul>
+  <ul> Solution:
+    <ul> destination_array = Array.new(3){Array.new(3)} </ul>
+    <ul># creates [[nil, nil, nil], [nil, nil, nil], [nil, nil, nil]] </ul><br>
+    <ul> destination_array.map!.with_index do |row, row_index| <ul> row.map!.with_index do |column, column_index| <ul> given_array.each_slice(3).to_a[row_index][column_index].sample </ul></ul>
+      <ul> end</ul></ul>
+      <ul> end</ul></ul> </p>
+
+
+  <ul> <strong> Solution #2: Appreciate What's Given.</strong></ul>
+  <ul> Pseudocode: <ol> <li> Change the given_array to be the destination array. <li> Select each element from each nested array. </ul>
+  <ul> Solution:
+
+    <ul> <br><strong> destination_array = given_array.map(&:sample).each_slice(3).to_a </strong> </ul> <br>
+      <ul>#map iterates through each nested array and "sample" selects one element ("flattens the array"). <ul> <br> <li>
+        #map(&;sample) is equivalent to map{|nested_array| nested_array.sample} </li></ul> </ul><br>
+      <ul> #each_slice(3) groups each three elements. </ul><br>
+      <ul> #to_a. Because each_slice(3) returns an enumerator method (I don't know WHAT that means), you need to call #t_a on the enumerator to see the results in array.</ul></ul>
+
+<h4>Sooo uhhh... seriously... just appreciate what you have ... it's better...faster... grass is NOT greener... Say Yes to Here and Now. </h4>
+
+<h3>Takeaway 3: Data Structures - Fewer operations = faster operations.</h3>
+
+<p> Type of DS: array, hashes, list, stacks, queue, etc. List of DS types with time and space complexity: <a href="http://bigocheatsheet.com/#data-structures"> http://bigocheatsheet.com/#data-structures</a> <strong> I don't know how to read this chart yet ... </strong> </p>
+
+<ol> <li>  Know which type of DS to use for the specific problem.   (Ex: A "Stack" DS is for depth searches). Define what are the operations you need to solve the problem.
+  <li> determine the best DS type with the least amount of extras.
+  <ul>  FASTEST?: Array stores elements sequentially starting with zero. "Hey Elements, Get in line and count off starting from zero!" Fast because all values in an array are the same <em> type </em> therefore same amount of memory to store, and #2: elements are stored in memory locations sequentially therefore fast to find data (math): starting_num + (element_sought × size_of_each_element).</ul>
+  <li>To learn more about other DS types: <a href="https://github.com/sf-raccoons-2014/phase-1-guide/blob/master/week-1/discussions/data-structures.md"> More DS </a>.</li> </ol>
+
+
+<h3>Heirarchy of organized data. </h3>
+
+<p> [least organized data] Abstract -> Data Type -> Data Structure [most organized]</p>
+
+<p> Abstract Data Types (ADT): Just an idea of things and how to manipulate these things.  <br> Boolean, the set of {true, false} and operations like negation, conditional, is equal to.
+<br> Integer, the set of {..., -2, -1, 0, 1, 2, ...} and operations like +, -, * and /. </p>
+
+<p> Data Type: apply the ADT into real values.<br> Boolean, Integer, Fixnum, Symbol classes in Ruby
+examples: bool in C++, boolean in Java</p>
+
+<p> Data Structure (DS) (unlike the above simple types, these are not "atomic" and can be divided into parts): apply ADT in an organized/structured relationship. Array, , hash, queue, list,stacks, sets, classes, streams, ranges. </p>
+
+
+
+
+
+
+    <div id="footer">
+      <ul style="list-style-type:none">
+        <li>
+          <a href="http://quynhchen.github.io/blog/">Home</a> &nbsp
+          <a href="https://twitter.com/QuynhCodeLaw">twitter</a> &nbsp
+          <a href="https://github.com/QuynhChen"> github</a> &nbsp
+          <a href="https://www.linkedin.com/pub/quynh-chen-esq/7/650/42">linkedin</a> &nbsp
+          <a href="mailto:quynh.chen@gmail.com">Email me</a> &nbsp
+          <a href="https://www.facebook.com/quynh.chen.7">facebook</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+  </body
+</html>
