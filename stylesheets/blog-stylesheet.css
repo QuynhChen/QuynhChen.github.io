@@ -57,6 +57,12 @@ a:hover {
   background-color: gray;
 }
 
+#snip {
+  font-family: Comic Sans MS;
+  text-align: center;
+  color: blue;
+}
+
 
 #blog {
   font-size: 1em;
