@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </head>
+
+  <body id="container">
+    <div id="title">
+    Rack
+    </div>
+
+    <div id="intro">
+What is a Rack on the Internet? 12/9/14
+    </div>
+
+    <div id="blog">
+    Dear Fellow Beginners,
+
+<h3> Rack provides a minimal, modular and adaptable interface for developing web applications in Ruby by interfacing between webservers supporting Ruby(webservers that support Rack: Phusion Passenger, Litespeed, Mongrel, Thin, Ebb, Webrick)  and your Ruby frameworks(your app). </h3>
+
+<p>http://rack.github.io/</p>
+
+
+<p> To use Rack: write an <strong> "app" aka Ruby framework </strong>. An "app" is an object that responds to the #call method, taking the environment hash as a parameter, and returning an Array with three elements: <br>
+<ul> <li> The HTTP response code ("status")
+<li> A Hash of headers
+<li>The response body, which must respond to #each</p></li> </ul>
+
+<h3> Two ways to provide this "app"
+</h3>
+
+<p>#1 <strong> Directly </strong> by touching a my_rack_app.rb file. In this rb file, type in:
+
+<p> require 'rack'
+<p> app = Proc.new do |env| <br>
+     &nbsp ['200', {'Content-Type' => 'text/html'}, ['A barebones rack app.']]
+<br> end
+
+<p> Rack::Handler::WEBrick.run app
+</p>
+
+<p>#2 use #rackup command line tool. Look for your config.ru file (it's probably located right below your Rakefile and it should require config/environment.rb). Type in the config.ru:
+
+<p>run Proc.new { |env| ['200', {'Content-Type' => 'text/html'}, ['get rack\'d']] }
+
+  <p> Then on the command line in terminal, type in:
+    <p> rackup config.ru
+</p>
+
+
+<p> Rack does two things:
+  1) Racks specifies how a Rack app and the web server should communicate. A Rack app is an ruby object (not a class) that responds to #call. It takes exactly one argument, the environment (it's a hash!) and returns an Array of exactly three values: The status, the headers, and the body.
+
+  <p> http://m.onkey.org/ruby-on-rack-1-hello-rack
+
+</p>
+</p>
+
+
+</p>
+
+
+    <div id="footer">
+      <ul style="list-style-type:none">
+        <li>
+          <a href="http://quynhchen.github.io/blog/">Home</a> &nbsp
+          <a href="https://twitter.com/QuynhCodeLaw">twitter</a> &nbsp
+          <a href="https://github.com/QuynhChen"> github</a> &nbsp
+          <a href="https://www.linkedin.com/pub/quynh-chen-esq/7/650/42">linkedin</a> &nbsp
+          <a href="mailto:quynh.chen@gmail.com">Email me</a> &nbsp
+          <a href="https://www.facebook.com/quynh.chen.7">facebook</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+  </body
+</html>
